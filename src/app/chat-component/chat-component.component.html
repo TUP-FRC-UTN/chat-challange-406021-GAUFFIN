@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="row justify-content-center align-items-center g-2">
+    <div class="col-10 m-3">
+      <div class="card">
+        <div class="row justify-content-center align-items-center g-2 p-5">
+          <app-messages [messages]="chat"></app-messages>
+        </div>
+        <div class="row justify-content-center align-items-center g-2">
+          <!-- <app-text-input [issuer]="'pepe'" (enviarMensaje)="recibirMensaje()"></app-text-input> -->
+          <div class="col-4">
+            <app-text-input
+              [issuer]="'pepe'"
+              (enviarMensaje)="recibirMensaje($event)"
+            ></app-text-input>
+          </div>
+          <div class="col-4">
+            <app-text-input
+              [issuer]="'pepito'"
+              (enviarMensaje)="recibirMensaje($event)"
+            ></app-text-input>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

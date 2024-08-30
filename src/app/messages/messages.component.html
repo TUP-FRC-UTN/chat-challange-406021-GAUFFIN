@@ -1,0 +1,8 @@
+<div class="card">
+  <div class="card-body">
+    @for (message of messages; track messages) {
+    <li>{{ message.text }} - {{ message.issuer }}</li>
+
+    }
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<!-- nueva directiva -->
+
+@if(estaActuivo){
+<div>holaMundo</div>
+}@else {
+<div>Chau munfo</div>
+}
+
+<!-- vieja directiva -->
+
+<div *ngIf="estaActuivo">Hola mundo con directiva virja</div>
+<div *ngFor=""></div>
+
+<!-- for nueva directiva -->
+
+@for (item of items; track item) {
+<li>{{ item }}</li>
+
+}
+
+<app-chat-component></app-chat-component>
